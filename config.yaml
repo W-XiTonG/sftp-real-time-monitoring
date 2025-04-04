@@ -1,0 +1,24 @@
+host: "192.168.236.159"
+port: 22
+username: "bssuser"
+password: "bssuser"
+private_key:
+watch_dir:
+interval:
+file_pattern:
+# 日志配置
+logFile: "logs/log.txt"
+# 使用方式：1-本地上传到远程；2-远程下载到本地
+manner: 1
+# 检测间隔，单位：秒（仅远程下载到本地有效，本地上传为实时）
+TimeInterval: 5
+# 是否支持（上传/下载）目录：true-支持；false-不支持
+SupportCatalogs: true
+# 上传/下载方式：1-增量；2-全量
+incrementalFull: 1
+# 上传下载后是否删除：true-删除；false-不删除（只有增量可以使用）
+whetherDelete: true
+# 本地路径
+LocalPaths: "/data/sftp"
+# 远程路径
+RemotePaths: "/upload"
